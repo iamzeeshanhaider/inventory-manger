@@ -7,8 +7,8 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::post('/signup', [AuthController::class, 'signup']);
-Route::post('/login', [AuthController::class, 'login']);
+Route::post('/auth/signup', [AuthController::class, 'signup']);
+Route::post('/auth/login', [AuthController::class, 'login']);
 Route::group([
     'middleware' => 'api',
     'prefix' => 'auth'
